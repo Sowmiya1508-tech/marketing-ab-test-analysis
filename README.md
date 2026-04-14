@@ -1,114 +1,98 @@
-## 📊 Marketing Campaign A/B Test Analysis
+# Marketing Campaign A/B Test Analysis
+### Python | Statistics | Data Visualization
 
-## 📌 Business Problem
+## 📌 Project Overview
+Analyzed 588,101 user records to evaluate whether 
+a real advertisement performs better than a Public 
+Service Announcement (PSA) in converting users to customers.
 
-Companies invest heavily in advertisements, but often lack clear evidence of their effectiveness.
-This project evaluates whether real advertisements drive higher conversions compared to Public Service Announcements (PSA), using large-scale user data and statistical testing.
+---
 
 ## 🎯 Objective
-Compare conversion performance: Ad vs PSA
-Identify best days and hours for ad effectiveness
-Analyze impact of ad exposure frequency
-Provide data-driven business recommendations
-## 📂 Dataset Overview
-Total Users: 588,101
-Groups:
-Ad Group: 564,577
-PSA Group: 23,524
-Target Variable: Conversion (True/False)
-Features: Day, Hour, Total Ads Seen, Group Type
-## 🧪 Methodology
-Data cleaning and preprocessing
-Exploratory Data Analysis (EDA)
-Group comparison (Ad vs PSA)
-Conversion rate calculation
-Contingency table creation
-Chi-Square test for statistical significance
-Confidence interval estimation
-## 📊 Key Results
-Metric	Value
-Ad Conversion Rate	2.55%
-PSA Conversion Rate	1.79%
-Lift	+43.09%
-Chi-Square Value	54.01
-P-Value	< 0.001 (statistically significant)
-Confidence Interval	2.51% – 2.60%
-## 📈 Insights
-📊 Ads outperform PSA by 43% higher conversion
-📅 Best day: Monday (3.28%)
-⏰ Best time: 2 PM – 5 PM (peak at 4 PM)
-🌙 Worst performance: 1 AM – 3 AM
-📢 Ad frequency strongly impacts conversion:
-0–10 ads → 0.33%
-100+ ads → 16.91%
-⚖️ Similar ad exposure across groups → performance driven by content quality
-## 📊 Visualizations
+- Test if real ads cause more conversions than PSA
+- Identify best performing days and hours for ads
+- Understand impact of ad frequency on conversion
+- Provide statistical proof for business decisions
 
-### 1. Conversion Rate — Ad vs PSA
-![Conversion Rate](images/chart1_conversion_rate_ad_vs_psa.png)
+---
 
-### 2. Conversion Rate by Day of Week
-![By Day](images/chart2_conversion_rate_day.png)
-
-### 3. Conversion Rate by Hour
-![By Hour](images/chart3_conversion_rate_hour.png)
-
-### 4. Total Ads Distribution by Group
-![Distribution](images/chart4_ads_distribution.png)
-
-### 5. Conversion by Ad Volume Group
-![Ad Volume](images/chart5_conversion_by_volume.png)
-
-### 6. Statistical Summary Table
-![Summary](images/statistical_summary_table.png)
-
-## 💡 Business Recommendations
-✅ Scale real ad campaigns
-🎯 Focus on Monday & Tuesday
-⏰ Run ads between 2 PM – 5 PM
-📈 Increase ad exposure strategically
-❌ Reduce PSA budget
-🎨 Improve ad creative quality
-## 💰 Business Impact
-43% lift indicates strong ROI improvement potential
-Optimized scheduling reduces wasted ad spend
-Enables data-driven marketing decisions
-## ⚠️ Limitations
-Possible selection bias in user assignment
-External factors (seasonality, campaigns) not included
-High ad frequency may lead to user fatigue
-## 🚀 Future Improvements
-Apply logistic regression modeling
-Perform advanced A/B testing simulations
-Analyze long-term retention and churn
-Segment users for deeper insights
-## ⚙️ How to Run
-git clone https://github.com/Sowmiya1508-tech/marketing-ab-test-analysis
-cd marketing-ab-test-analysis
-
-pip install -r requirements.txt
-
-jupyter notebook
-## 📂 Project Structure
-marketing-ab-test-analysis/
-│── data/
-│     └── marketing_data.csv
-│
-│── images/
-│     └── conversion_rate_ad_vs_psa.png
-│      
-│── notebooks/
-│     └── Marketing A and B Test Analysis.ipynb
-│
-│── README.md
-│── requirements.txt
 ## 🛠️ Tools & Technologies
-Python (Pandas, NumPy)
-Scipy (Chi-Square Test)
-Statsmodels (Confidence Intervals)
-Matplotlib & Seaborn (Visualization)
-## 👩‍💻 Author
+| Tool | Purpose |
+|---|---|
+| Python (Pandas, Numpy) | Data loading and cleaning |
+| Scipy | Chi-Square statistical test |
+| Statsmodels | Confidence Interval calculation |
+| Matplotlib & Seaborn | Data visualization |
 
-Sowmiya Devi
+---
+
+## 📂 Dataset
+- **Records:** 588,101 users
+- **Columns:** 7
+- **Groups:** ad (564,577 users) vs psa (23,524 users)
+- **Target:** Converted (True/False)
+
+---
+
+## 📊 Statistical Analysis
+
+| Metric | Value |
+|---|---|
+| Ad Conversion Rate | 2.55% |
+| PSA Conversion Rate | 1.79% |
+| Chi-Square Value | 54.0058 |
+| P-Value | 0.0 (< 0.05) |
+| Lift | 43.09% |
+| Confidence Interval | 2.51% to 2.60% |
+
+---
+
+## 💡 Key Insights
+1. Ad campaign is **statistically proven** to work
+   P-value = 0.0 confirms difference is not random
+2. Real ad performs **43% better** than PSA group
+   Ad: 2.55% vs PSA: 1.79% conversion rate
+3. **Monday** has highest conversion rate at 3.28%
+   Weekdays outperform weekends consistently
+4. **Hour 16 (4PM)** has peak conversion at 3.08%
+   Early morning hours (1-3AM) perform worst
+5. Users seeing **100+ ads convert at 16.91%**
+   vs only 0.33% for users seeing 0-10 ads
+6. Both groups see similar ad volume (median ~13)
+   Higher conversion is due to **better ad content**
+
+---
+
+## ✅ Recommendations
+1. Continue and scale the real ad campaign
+2. Focus ad spend on **Monday and Tuesday**
+3. Schedule ads between **2PM-5PM** for maximum impact
+4. Increase ad frequency — more exposure = higher conversion
+5. Reduce PSA budget — real ads clearly outperform
+6. Invest in better **ad creative content** quality
+
+---
+
+## 📈 Visualizations
+1. Conversion Rate — Ad vs PSA (Bar Chart)
+2. Conversion Rate by Day of Week (Line Chart)
+3. Conversion Rate by Hour (Line Chart)
+4. Total Ads Distribution by Group (Box Plot)
+5. Conversion by Ad Volume Group (Bar Chart)
+6. Statistical Summary Table
+
+---
+
+## 🚀 How to Run
+Install required libraries:
+pip install pandas numpy matplotlib seaborn scipy statsmodels
+Open notebook:
+jupyter notebook marketing_ab_test.ipynb
+
+---
+
+## 👤 Author
+**Sowmiya Devi**
 Aspiring Data Analyst
-Skills: Python | SQL | Power BI
+📧 sowmiyadevi1508@gmail.com
+🔗 https://www.linkedin.com/in/sowmiyadevi-da/
