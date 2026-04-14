@@ -45,23 +45,22 @@ Confidence Interval	2.51% – 2.60%
 ## 📊 Visualizations
 
 ### 1. Conversion Rate — Ad vs PSA
-![Conversion Rate](images/chart1_Conversion_Rate_Ad_vs_PSA.png)
+![Conversion Rate](images/chart1_conversion_rate_ad_vs_psa.png)
 
 ### 2. Conversion Rate by Day of Week
-![By Day](images/chart2_Conversion_Rate_by_Day_of_Week.png)
+![By Day](images/chart2_conversion_rate_day.png)
 
 ### 3. Conversion Rate by Hour
-![By Hour](images/chart3_Conversion_Rate_by_Hour.png)
+![By Hour](images/chart3_conversion_rate_hour.png)
 
 ### 4. Total Ads Distribution by Group
-![Distribution](images/chart4_Total_Ads_Distribution_by_Group.png)
+![Distribution](images/chart4_ads_distribution.png)
 
 ### 5. Conversion by Ad Volume Group
-![Ad Volume](images/chart5_Conversion_by_Ad_Volume_Group.png)
+![Ad Volume](images/chart5_conversion_by_volume.png)
 
 ### 6. Statistical Summary Table
-![Summary](images/Statistical_Summary_Table.png)
-
+![Summary](images/statistical_summary_table.png)
 
 ## 💡 Business Recommendations
 ✅ Scale real ad campaigns
